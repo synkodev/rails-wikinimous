@@ -1,0 +1,9 @@
+<h1>Edit article</h1>
+
+<%= form_with model: @article do |f| %>
+  <%= f.label :title, "Insert a title" %>
+  <%= f.text_field :title %>
+  <%= f.label :content, "Type your article here" %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
